@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>authors</title>
+</head>
+<body>
+<%@employees.each do |employee| %>
+  <h3><%=link_to("#{employee.name}, #{employee.surname}" ,employee_path(id: employee.id))%></h3>
+<% end %>
+
+</body>
+</html>

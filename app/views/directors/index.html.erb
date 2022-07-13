@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>authors</title>
+</head>
+<body>
+<%@directors.each do |director| %>
+  <h3><%=link_to("#{director.name}, #{director.surname}" ,director_path(id: director.id))%></h3>
+<% end %>
+
+</body>
+</html>

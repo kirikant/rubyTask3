@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>authors</title>
+</head>
+<body>
+<%@shops.each do |shop| %>
+  <h3><%=link_to(shop.title,shop_path(id: shop_id))%></h3>
+<% end %>
+
+</body>
+</html>
