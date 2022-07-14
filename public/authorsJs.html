@@ -1,0 +1,129 @@
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src = "main.js"></script>
+<h1>Authors</h1>
+
+
+<button id="get authors" onclick="getEntities('authors')">Get authors</button>
+<br>
+<br>
+<form >
+    <input id="author_name" type="text" placeholder="enter name">
+    <input id="author_surname" type="text" placeholder="enter surname">
+    <input id="author_style" type="text" placeholder="enter style">
+    <input id="books_id" type="text" placeholder="enter books ids (by comma)">
+    <button id="add author" onclick="addEntity('authors')">Add author</button>
+</form>
+<form >
+    <input id="author_get_id" type="number" placeholder="enter id">
+    <button id="get author" onclick="getEntity('authors')">Get author</button>
+</form>
+
+<form >
+    <input id="author_delete_id" type="number" placeholder="enter id">
+    <button id="delete author" onclick="deleteEntity('authors')">Delete author</button>
+</form>
+
+<form >
+    <input id="author_update_id" type="number" placeholder="enter id">
+    <input id="author_update_name" type="text" placeholder="enter name">
+    <input id="author_update_surname" type="text" placeholder="enter surname">
+    <input id="author_update_style" type="text" placeholder="enter style">
+    <input id="books_update_id" type="text" placeholder="enter books ids (by comma)">
+    <button id="update author" onclick="updateEntity('authors')">Update author</button>
+</form>
+<br>
+<br>
+
+
+<button id="get books" onclick="getEntities('books')">Get books</button>
+<br>
+<br>
+<form >
+    <input id="book_title" type="text" placeholder="enter title">
+    <input id="book_published_at" type="date" placeholder="enter publishing date">
+    <input id="book_theme" type="text" placeholder="enter theme">
+    <input id="book_shop_id" type="number" placeholder="enter shop id">
+    <input id="authors_id" type="text" placeholder="enter authors ids (by comma)">
+    <button id="add book" onclick="addEntity('books')">Add book</button>
+</form>
+<form >
+    <input id="book_get_id" type="number" placeholder="enter id">
+    <button id="get book" onclick="getEntity('books')">Get book</button>
+</form>
+<form >
+    <input id="book_delete_id" type="number" placeholder="enter id">
+    <button id="delete book" onclick="deleteEntity('books')">Delete book</button>
+</form>
+<form >
+    <input id="update_book_id" type="number" placeholder="enter id">
+    <input id="update_book_title" type="text" placeholder="enter title">
+    <input id="update_book_published_at" type="date" placeholder="enter publishing date">
+    <input id="update_book_theme" type="text" placeholder="enter theme">
+    <input id="update_book_shop_id" type="number" placeholder="enter shop id">
+    <input id="update_authors_id" type="text" placeholder="enter authors ids (by comma)">
+    <button id="update book" onclick="updateEntity('books')">Update book</button>
+</form>
+
+
+<br>
+<br>
+<br>
+<br>
+<button id="get directors" onclick="getEntities('directors')">Get directors</button>
+<br>
+<br>
+<form >
+    <input id="director_name" type="text" placeholder="enter name">
+    <input id="director_surname" type="text" placeholder="enter surname">
+    <input id="director_salary" type="number" placeholder="enter salary">
+    <input id="director_shop_id" type="number" placeholder="enter shop id">
+    <button id="add director" onclick="addEntity('directors')">Add director</button>
+</form>
+<form >
+    <input id="director_get_id" type="number" placeholder="enter id">
+    <button id="get director" onclick="getEntity('directors')">Get director</button>
+</form>
+<form >
+    <input id="director_delete_id" type="number" placeholder="enter id">
+    <button id="delete director" onclick="deleteEntity('directors')">Delete director</button>
+</form>
+<form >
+    <input id="update_director_id" type="number" placeholder="enter id">
+    <input id="update_director_name" type="text" placeholder="enter name">
+    <input id="update_director_surname" type="text" placeholder="enter surname">
+    <input id="update_director_salary" type="number" placeholder="enter salary">
+    <input id="update_director_shop_id" type="number" placeholder="enter shop id">
+    <button id="Update director" onclick="updateEntity('directors')">Update director</button>
+</form>
+
+
+<br>
+<br>
+<br>
+<br>
+<button id="get employees" onclick="getEntities('employees')">Get employees</button>
+<br>
+<br>
+<form >
+    <input id="employee_name" type="text" placeholder="enter name">
+    <input id="employee_surname" type="text" placeholder="enter surname">
+    <input id="employee_age" type="number" placeholder="enter age">
+    <input id="employee_shop_id" type="number" placeholder="enter shop id">
+    <button id="add employee" onclick="addEntity('employees')">Add employee</button>
+</form>
+<form >
+    <input id="employee_get_id" type="number" placeholder="enter id">
+    <button id="get employee" onclick="getEntity('employees')">Get employee</button>
+</form>
+<form >
+    <input id="employee_delete_id" type="number" placeholder="enter id">
+    <button id="delete employee" onclick="deleteEntity('employees')">Delete employee</button>
+</form>
+<form >
+    <input id="update_employee_id" type="number" placeholder="enter id">
+    <input id="update_employee_name" type="text" placeholder="enter name">
+    <input id="update_employee_surname" type="text" placeholder="enter surname">
+    <input id="update_employee_age" type="number" placeholder="enter age">
+    <input id="update_employee_shop_id" type="number" placeholder="enter shop id">
+    <button id="update employee" onclick="updateEntity('employees')">Update employee</button>
+</form>

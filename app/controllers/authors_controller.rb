@@ -10,7 +10,7 @@ class AuthorsController < ApplicationController
   def create
     @author = Author.new(authors_params)
 
-    unless params[:books_id].nil?
+    if !params[:books_id].nil? && params[:books_id]!=""
       params[:books_id].each do |book_id|
         @author.books << Book.find(book_id)
       end
@@ -29,7 +29,7 @@ class AuthorsController < ApplicationController
 
   def update
 
-    unless params[:books_id].nil?
+    if !params[:books_id].nil? && params[:books_id]!=""
       @author.books.delete
       params[:books_id].each do |book_id|
         @author.books << Book.find(book_id)
@@ -55,7 +55,7 @@ class AuthorsController < ApplicationController
   end
 
   def authors_params
-    params.require(:author).permit(:name, :surname, :style)
+    params.permit(:name, :surname, :style)
   end
 
 end

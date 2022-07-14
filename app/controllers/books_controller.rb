@@ -9,7 +9,7 @@ class BooksController < ApplicationController
 
   def create
     @book = Book.new(books_params)
-    unless params[:authors_id].nil?
+    if !params[:authors_id].nil? && params[:authors_id]!=""
       params[:authors_id].each do |author_id|
         @book.authors << Author.find(author_id)
       end
@@ -27,10 +27,11 @@ class BooksController < ApplicationController
   end
 
   def update
-    unless params[:authors_id].nil?
+    if !params[:authors_id].nil? && params[:authors_id]!=""
       @book.authors.delete
       params[:authors_id].each do |author_id|
         @book.authors << Author.find(author_id)
+      end
       end
       @book.save
       @book.update(books_params)
@@ -55,4 +56,4 @@ class BooksController < ApplicationController
   def books_params
     params.permit(:title, :published_at, :theme, :shop_id)
   end
-end
+
